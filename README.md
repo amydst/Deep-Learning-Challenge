@@ -1,7 +1,7 @@
 # Deep-Learning-Challenge
 
 ## Overview:
-    This neural network model is designed to predict the success of a venture Alphabet Soup gave funding to, based on several features. The optimized model obtained a 75.17% accuracy at predicting the success of the project.
+This neural network model is designed to predict the success of a venture Alphabet Soup gave funding to, based on several features. The optimized model obtained a 75.17% accuracy at predicting the success of the project.
 
 
 ## Results: 
