@@ -6,8 +6,8 @@ This neural network model is designed to predict the success of a venture Alphab
 
 ## Results: 
 ### Preprocessing the data:
-    - The target variable is called 'IS_SUCCESSFUL' Meaning the binary clasification of the project as succesful at reaching its goal or not.
-    -The features of the optimized model are:
+- The target variable is called 'IS_SUCCESSFUL' Meaning the binary clasification of the project as succesful at reaching its goal or not.
+-The features of the optimized model are:
         - Name: Categorized by the kind of group or organization included in their name (ex. Association, Club, Ministry, etc.)
         - Affiliation:
         - Classification: Categories with more than 100 counts, any category under 100 uses was combined into "Other" Category
@@ -39,16 +39,15 @@ This neural network model is designed to predict the success of a venture Alphab
     The following columns were removed because they did not add to the accuracy of the model: 'EIN'and'STATUS',
 
 ### Compiling, Training, and Evaluating the Model
-    - The model has 3 layers plus the output layer, first one has 64 nodes, the second and third layers have 32 nodes each, all using the Tanh activation function.
+- The model has 3 layers plus the output layer, first one has 64 nodes, the second and third layers have 32 nodes each, all using the Tanh activation function.
     These specifications were selected as they improved the accuracy of the model.
-    - The model achieve the target performance of 75%, this was achieved by adding another hidden layer and more nodes to all layers, in addition to some extra processing of the data:
+- The model achieve the target performance of 75%, this was achieved by adding another hidden layer and more nodes to all layers, in addition to some extra processing of the data:
         - Ask Amount was converted into a categorical variable
         - Name was included and transformed into categories based on the types of grops in the name of the organization. This is the change that contributed the most to the improvement of the model.
         - Status was removed since it didn't contribute to the model
         - Income Amount was also converted into a categorical variable, dividing the projects if they had reported income or not. 
 
 ## Summary: 
-
 Overall, the model achieved a great accuracy level of 75% with the performed optimization, from the various steps taken to improve performance it was noted that the range of values of some of the features might be to wide and its ocurrences are too variable for the model, it could prove useful to separate the data into subsets by 'Ask Amount' and 'Income Amount'. 
 
 Another suggestion would be to include more categories of the organizations based on their Names, there are 19,146 in the 'Other' category, it's possible that some of them can be taken out into their own category and help improve the model.
