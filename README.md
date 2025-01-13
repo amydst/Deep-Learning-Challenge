@@ -8,12 +8,12 @@ This neural network model is designed to predict the success of a venture Alphab
 ### Preprocessing the data:
 - The target variable is called 'IS_SUCCESSFUL' Meaning the binary clasification of the project as succesful at reaching its goal or not.
 -The features of the optimized model are:
-        - Name: Categorized by the kind of group or organization included in their name (ex. Association, Club, Ministry, etc.)
-        - Affiliation:
-        - Classification: Categories with more than 100 counts, any category under 100 uses was combined into "Other" Category
-        - Application Type: Type used more 10 or more time, all other types were combined into "Other"
-        - Income Amount:  Divided into two categories: No income ($0) or Has income ('Greater than 0')
-        - Ask Amount: This category has a really wide range, so it was grouped into 21 categories:
+  - Name: Categorized by the kind of group or organization included in their name (ex. Association, Club, Ministry, etc.)
+  - Affiliation:
+  - Classification: Categories with more than 100 counts, any category under 100 uses was combined into "Other" Category
+  - Application Type: Type used more 10 or more time, all other types were combined into "Other"
+  - Income Amount:  Divided into two categories: No income ($0) or Has income ('Greater than 0')
+  - Ask Amount: This category has a really wide range, so it was grouped into 21 categories:
             "0 - 5,000",
             "5,001 - 450,000",
             "450,001 - 900,000",
@@ -35,7 +35,7 @@ This neural network model is designed to predict the success of a venture Alphab
             "7,650,001 - 8,100,000",
             "8,100,001 - 8,550,000",
             "over 8,550,000 "
-        - Special Considerations: If the application had special considerations or not, 1 for yes, 0 for not.
+  - Special Considerations: If the application had special considerations or not, 1 for yes, 0 for not.
     The following columns were removed because they did not add to the accuracy of the model: 'EIN'and'STATUS',
 
 ### Compiling, Training, and Evaluating the Model
