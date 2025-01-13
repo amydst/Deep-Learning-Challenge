@@ -42,10 +42,10 @@ This neural network model is designed to predict the success of a venture Alphab
 - The model has 3 layers plus the output layer, first one has 64 nodes, the second and third layers have 32 nodes each, all using the Tanh activation function.
     These specifications were selected as they improved the accuracy of the model.
 - The model achieve the target performance of 75%, this was achieved by adding another hidden layer and more nodes to all layers, in addition to some extra processing of the data:
-        - Ask Amount was converted into a categorical variable
-        - Name was included and transformed into categories based on the types of grops in the name of the organization. This is the change that contributed the most to the improvement of the model.
-        - Status was removed since it didn't contribute to the model
-        - Income Amount was also converted into a categorical variable, dividing the projects if they had reported income or not. 
+  - Ask Amount was converted into a categorical variable
+  - Name was included and transformed into categories based on the types of grops in the name of the organization. This is the change that contributed the most to the improvement of the model.
+  - Status was removed since it didn't contribute to the model
+  - Income Amount was also converted into a categorical variable, dividing the projects if they had reported income or not. 
 
 ## Summary: 
 Overall, the model achieved a great accuracy level of 75% with the performed optimization, from the various steps taken to improve performance it was noted that the range of values of some of the features might be to wide and its ocurrences are too variable for the model, it could prove useful to separate the data into subsets by 'Ask Amount' and 'Income Amount'. 
